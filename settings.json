@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons",
+    "liveSassCompile.settings.formats": [
+        {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "./src/css/"
+        }
+        ]
+}
