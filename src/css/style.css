@@ -50,7 +50,7 @@ img {
 }
 
 .navbar {
-  padding: 8px 0;
+  padding: 10px 0;
 }
 
 .navbar-block {
@@ -100,7 +100,7 @@ img {
   color: #333333;
   font-size: 20px;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 8px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -142,7 +142,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
-  padding-right: 120px;
+  padding-right: 85px;
 }
 
 .hero-text__title {
@@ -173,7 +173,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .hero-list__image {
@@ -193,7 +193,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 27px;
 }
 
 .hero-list__text {
