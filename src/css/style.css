@@ -48,7 +48,7 @@ img {
   border: none;
   outline: none;
   background-color: #ffd200;
-  padding: 18px 30px;
+  padding: 26px 30px;
 }
 
 .button:hover {
@@ -57,7 +57,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 52px 0;
 }
 
 .section-title {
@@ -74,13 +74,9 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 26px;
+  padding: 24px 26px;
   font-size: 15px;
   border-radius: 10px;
-}
-
-.navbar {
-  padding: 10px 0;
 }
 
 .navbar-block {
@@ -93,6 +89,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8px 0;
 }
 
 .navbar__info {
@@ -179,6 +176,7 @@ img {
   font-size: 41px;
   font-weight: 700;
   line-height: 55px;
+  margin-top: 25px;
   margin-bottom: 40px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -188,7 +186,7 @@ img {
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .hero-list {
@@ -203,7 +201,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 
 .hero-list__item:last-child {
@@ -259,6 +257,7 @@ img {
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
+    margin-top: 0;
     margin-bottom: 15px;
   }
   .hero-text__subtitle {
@@ -306,12 +305,12 @@ img {
 .offer__title {
   min-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .offer__subtitle {
   min-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .offer__input {
@@ -325,8 +324,8 @@ img {
 
 .offer__button {
   width: 100%;
-  min-height: 70px;
-  margin-bottom: 31px;
+  font-size: 15px;
+  margin-bottom: 28px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -410,14 +409,15 @@ img {
     background: #fff;
   }
   .offer-block {
-    width: 100%;
+    width: 90%;
     padding-right: 0;
   }
   .offer__input {
     margin-right: 0;
   }
   .offer__title {
-    width: 90%;
+    min-width: 0;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

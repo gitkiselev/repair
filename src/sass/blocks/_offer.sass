@@ -18,19 +18,19 @@
     &__title
         min-width: 360px
         line-height: 35px
-        margin-bottom: 24px
+        margin-bottom: 20px
     &__subtitle
         min-width: 250px
-        margin-bottom: 30px
+        margin-bottom: 28px
     &__input   
         margin-bottom: 30px
         width: 240px
         &:first-child
             margin-right: 10px
     &__button
-         width: 100%  
-         min-height: 70px 
-         margin-bottom: 31px
+         width: 100%   
+         font-size: 15px
+         margin-bottom: 28px
          +bold         
 .action
     display: flex  
@@ -53,7 +53,6 @@
             width: 100% 
 @media (max-width: 768px)
     .action
-
         display: flex  
         justify-content: space-between
     &__call
@@ -77,10 +76,11 @@
     .offer
         background: #fff
         &-block
-            width: 100%
+            width: 90%
             padding-right: 0
         &__input
             margin-right: 0
         &__title
-            width: 90%       
+            min-width: 0
+            font-size: 18px       
 
