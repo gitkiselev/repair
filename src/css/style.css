@@ -79,6 +79,11 @@ img {
   border-radius: 10px;
 }
 
+.input:focus {
+  border: 0;
+  border: 1px solid orange;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +321,11 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+}
+
+.offer__input:focus {
+  outline: none;
+  border: 1px solid orange;
 }
 
 .offer__input:first-child {
