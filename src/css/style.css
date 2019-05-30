@@ -48,7 +48,7 @@ img {
   border: none;
   outline: none;
   background-color: #ffd200;
-  padding: 26px 30px;
+  padding: 19px 35px;
 }
 
 .button:hover {
@@ -68,7 +68,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -125,6 +125,7 @@ img {
   cursor: pointer;
   margin-left: 30px;
   font-weight: 700;
+  padding: 18px 30px;
 }
 
 .navbar__phone {
@@ -139,13 +140,13 @@ img {
 
 @media (max-width: 768px) {
   .navbar .navbar-block {
-    padding: 21px 0;
+    padding: 17px 0;
   }
   .navbar .navbar__contacts {
     display: none;
   }
   .navbar .navbar__button {
-    font-size: 13px;
+    font-size: 10px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
     padding: 15px 26px;
@@ -259,11 +260,17 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 38px 0 52px;
+  }
+  .hero-text {
+    padding-right: 0;
+  }
   .hero-text__title {
     font-size: 24px;
     line-height: 1.4;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
   .hero-text__subtitle {
     font-size: 16px;
@@ -278,6 +285,7 @@ img {
   .hero-list__text {
     font-size: 12px;
     font-weight: 400;
+    line-height: 1.2;
   }
   .hero-list__image {
     margin-right: 15px;
@@ -308,9 +316,9 @@ img {
 }
 
 .offer__title {
-  min-width: 360px;
-  line-height: 35px;
+  max-width: 346px;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .offer__subtitle {
@@ -424,10 +432,50 @@ img {
   }
   .offer__input {
     margin-right: 0;
+    margin-bottom: 8px;
   }
   .offer__title {
     min-width: 0;
     font-size: 18px;
+    line-height: 1.2;
+    margin-top: 0;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
+  .offer__subtitle {
+    margin-bottom: 27px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  min-width: 450px;
+  width: 90%;
+  min-height: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
