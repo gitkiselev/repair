@@ -30,6 +30,10 @@ img {
   margin: auto;
 }
 
+.button {
+  padding: 27px 35px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -322,8 +326,9 @@ img {
 }
 
 .offer__subtitle {
-  min-width: 250px;
+  max-width: 232px;
   margin-bottom: 28px;
+  line-height: 1.4;
 }
 
 .offer__input {
@@ -344,6 +349,7 @@ img {
   width: 100%;
   font-size: 15px;
   margin-bottom: 28px;
+  padding: 27px 35px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -444,6 +450,9 @@ img {
   }
   .offer__subtitle {
     margin-bottom: 27px;
+  }
+  .offer__button {
+    padding: 19px 35px;
   }
 }
 
