@@ -43,7 +43,7 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
+    width: 91%;
   }
 }
 
@@ -174,12 +174,14 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -249,6 +251,9 @@ img {
   .hero {
     padding: 46px 0;
   }
+  .hero-image {
+    padding-left: 0;
+  }
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -272,13 +277,14 @@ img {
   }
   .hero-text__title {
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
+    padding-right: 10px;
   }
   .hero-list {
     margin-bottom: 38px;
@@ -298,7 +304,6 @@ img {
 
 .offer {
   background: url("../img/offer/offer-bg.jpg") no-repeat;
-  background-size: contain;
   background-position: center right;
   position: relative;
 }
@@ -433,7 +438,7 @@ img {
     background: #fff;
   }
   .offer-block {
-    width: 90%;
+    width: 100%;
     padding-right: 0;
   }
   .offer__input {
@@ -453,6 +458,9 @@ img {
   }
   .offer__button {
     padding: 19px 35px;
+  }
+  .action__call:first-child {
+    margin-bottom: 7px;
   }
 }
 
@@ -475,8 +483,8 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto;
-  min-width: 450px;
-  width: 90%;
+  min-width: 250px;
+  width: 25%;
   min-height: 200px;
   background-color: #fff;
   padding: 40px;
@@ -486,5 +494,41 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.to-top {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffd200;
+  border-radius: 100%;
+  background-color: #fff;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+.to-top:before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  width: 10px;
+  height: 2px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  background-color: #000;
+}
+
+.to-top:after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 10px;
+  height: 2px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  background-color: #000;
 }
 /*# sourceMappingURL=style.css.map */

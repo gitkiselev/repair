@@ -5,9 +5,9 @@
         box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
     &-block
         display: flex
+        justify-content: space-between
     &-text
-        flex-basis: 50%
-        padding-right: 100px   
+        flex-basis: 50%   
         &__title
             font-size: 41px
             font-weight: 700
@@ -47,6 +47,8 @@
 @media (max-width: 1200px)
     .hero
         padding: 46px 0
+        &-image
+            padding-left: 0
         &-block
             flex-direction: column
         &-list
@@ -60,12 +62,13 @@
             padding-right: 0
             &__title
                font-size: 24px
-               line-height: 1.4 
+               line-height: 1.2 
                margin-top: 0
-               margin-bottom: 2px
+               margin-bottom: 10px
             &__subtitle
                 font-size: 16px 
                 margin-bottom: 28px
+                padding-right: 10px
         &-list
             margin-bottom: 38px
             &__item
