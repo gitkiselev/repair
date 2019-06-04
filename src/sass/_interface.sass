@@ -8,38 +8,30 @@ img
     width: 1170px
     margin: auto
 .button
-      padding: 27px 35px  
-@media (max-width: 1200px)
-    .container
-        width: 760px
-@media (max-width: 768px)
-    .container
-        max-width: 580px
-        width: 91%
-.button
-    border-radius: 10px
-    border: none
-    outline: none
-    background-color: $main-color
-    padding: 19px 35px
-    &:hover
+      font-size: 16px
+      padding: 27px 35px
+      background-color: $main-color
+      border-radius: 10px
+      border: none
+      outline: none
+      &:hover
         background-color: lighten($main-color, 10%)
         cursor: pointer
 .section
-    padding: 52px 0
+    padding: 100px 0
     &-title
         font-size: 24px
         +bold
         text-align: center   
     &-subtitle
         display: block
-        font-size: 14px
-        font-weight: 400   
+        font-size: 16px
+        +bold   
 .input
-     border: 1px solid $border-input   
-     padding: 24px 26px
-     font-size: 15px
-     border-radius: 10px
+    border: 1px solid $border-input  
+    padding: 24px 26px
+    font-size: 15px
+    border-radius: 10px
 .input:focus
     border: 0
     border: 1px solid orange
@@ -47,4 +39,43 @@ img
     &__left, &__right
         &:hover
             cursor: pointer
-                
+.section
+    padding: 100px 0        
+@media (max-width: 1200px)
+    .container
+        width: 760px
+@media (max-width: 768px)
+    .container
+        max-width: 580px
+        width: 91%
+    .button
+        border-radius: 10px
+        border: none
+        outline: none
+        background-color: $main-color
+        padding: 19px 35px
+        &:hover
+            background-color: lighten($main-color, 10%)
+            cursor: pointer
+    .section
+        padding: 52px 0
+        &-title
+            font-size: 24px
+            +bold
+            text-align: center   
+        &-subtitle
+            display: block
+            font-size: 14px
+            font-weight: 400   
+    .input
+        border: 1px solid $border-input   
+        padding: 24px 26px
+        font-size: 15px
+        border-radius: 10px
+    .input:focus
+        border: 0
+        border: 1px solid orange
+    .arrows
+        &__left, &__right
+            &:hover
+                cursor: pointer
