@@ -594,6 +594,13 @@ img {
   line-height: 45px;
 }
 
+.portfolio__launch {
+  -webkit-animation-name: fromCeil;
+          animation-name: fromCeil;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
@@ -725,5 +732,31 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@-webkit-keyframes fromCeil {
+  from {
+    margin-top: -50px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes fromCeil {
+  from {
+    margin-top: -50px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
