@@ -143,7 +143,7 @@
           <h2 class="section-title price__title">У нас очень гибкая система скидок
             на комплексные работы!
             </h2>
-          <span class="section__subtitle price__subtitle">Прайс на наши услуги
+          <span class="section-subtitle price__subtitle">Прайс на наши услуги
           </span>
           <div class="cards">
             <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
@@ -317,10 +317,23 @@
       new WOW().init();
       $(document).ready(function(){
         /*Validation*/
+        jQuery.validator.addMethod("customEmail", function(value, element) {
+             return this.optional(element) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i.test(value);
+            }, "Please enter valid email address!");
+
         $('#brif-form').validate({
           rules: {
             phone: {
               required: true
+            },
+            username: {
+              required: true,
+              minlength: 2,
+              maxength: 15
+            },
+            email: {
+              required: true,
+              customEmail:true
             }
           },
           messages: {
