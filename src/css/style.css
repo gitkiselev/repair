@@ -940,6 +940,10 @@ img {
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
   }
+  .brif__interview {
+    background: url("../img/brif/brif-color-bg.png");
+    background-repeat: repeat-y;
+  }
   .brif-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -947,7 +951,121 @@ img {
             flex-direction: column;
   }
   .brif__form {
-    margin-top: 80px;
+    padding-top: 61px;
+    margin-top: 100px;
+    padding-bottom: 34px;
+  }
+  .form__title {
+    margin-top: 61px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  max-width: 340px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 100px;
+  color: #000000;
+}
+
+.contacts__bold {
+  color: #000000;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__bold_link {
+  text-decoration: none;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+  line-height: 26px;
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    position: static;
+    width: 100%;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-top: 67px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    max-width: 240px;
+    margin-bottom: 39px;
+  }
+  .contacts__bold {
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */
