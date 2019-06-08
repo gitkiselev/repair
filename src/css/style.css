@@ -1013,6 +1013,13 @@ img {
     background-position: top center, center bottom;
     background-size: 100% 44.5%, cover;
     background-repeat: repeat-x, no-repeat;
+    padding-bottom: 34px;
+  }
+  .brif__input {
+    margin-bottom: 8px;
+  }
+  .brif__button {
+    margin-top: 0;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -1032,7 +1039,11 @@ img {
     margin-bottom: 21px;
   }
   .form__subtitle {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
+  }
+  .form__description {
+    font-size: 14px;
+    padding: 0 67px;
   }
   .interview__title {
     font-size: 18px;
