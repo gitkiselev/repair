@@ -12,14 +12,11 @@
     &__title
         +bold
         font-size: 22px
-        max-width: 340px
         line-height: 1.4
-        margin-top: 0
         margin-bottom: 100px
         color: $color-black
     &__bold
         color: $color-black
-        +bold
         &_link
             text-decoration: none
     &-block
@@ -39,6 +36,9 @@
             margin-bottom: 39px
             line-height: 26px
             color: $color-black
+.form
+    &__subtitle
+        margin-bottom: 49px
 @media (max-width: 1200px)
     .footer
         position: static
@@ -52,11 +52,6 @@
         padding-left: 0
 @media (max-width: 768px)
     .contacts
-        padding-top: 67px
-        &__title
-            font-size: 18px
-            max-width: 240px
-            margin-bottom: 39px
         &__bold
             +bold
 

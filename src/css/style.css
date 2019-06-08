@@ -479,13 +479,13 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  __call {
+  .action__call {
     width: 194px;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
   }
-  __number {
+  .action__number {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -664,9 +664,11 @@ img {
 }
 
 .price__title {
+  font-size: 30px;
   margin: auto;
   margin-bottom: 58px;
   text-align: center;
+  max-width: 515px;
 }
 
 .price__subtitle {
@@ -680,6 +682,10 @@ img {
 
 .price__card {
   margin-bottom: 30px;
+}
+
+.price__card:nth-child(4), .price__card:nth-child(5), .price__card:nth-child(6) {
+  margin-bottom: 0;
 }
 
 .card {
@@ -767,11 +773,55 @@ img {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1200px) {
+  .price__card:nth-child(4) {
+    margin-bottom: 30px;
+  }
+  .price__card:nth-child(5), .price__card:nth-child(6) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .price__card {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 768px) {
+  .card:nth-child(5) {
+    margin-bottom: 30px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
   .cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .card__text {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .price__title {
+    font-size: 18px;
+    max-width: 242px;
+    margin-bottom: 27px;
+  }
+  .price__subtitle {
+    margin-bottom: 61px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 614px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .card:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -830,6 +880,8 @@ img {
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .brif__input:focus {
@@ -841,8 +893,10 @@ img {
 }
 
 .interview__title {
-  margin-bottom: 58px;
+  margin-top: 0;
+  margin-bottom: 45px;
   font-size: 22px;
+  line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -870,6 +924,10 @@ img {
   margin-bottom: 25px;
 }
 
+.interview-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .interview-list__counter {
   display: inline-block;
   text-align: center;
@@ -883,12 +941,17 @@ img {
 }
 
 .interview-list__text {
+  font-size: 18px;
   max-width: 400px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .form__title {
-  margin-bottom: 58px;
+  margin-top: 0;
+  margin-bottom: 45px;
   font-size: 22px;
+  line-height: 33px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -904,15 +967,23 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .brif {
+    padding-top: 46px;
+  }
   .brif__form {
     padding-left: 30px;
   }
   .interview {
     padding-right: 30px;
   }
+  .interview-list__item {
+    margin-bottom: 26px;
+  }
   .interview__title {
     font-size: 20px;
-    margin-bottom: 15px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
   }
   .interview__subtitle {
     margin-bottom: 30px;
@@ -923,6 +994,9 @@ img {
   }
   .interview-list__counter {
     margin-right: 20px;
+    min-width: 35px;
+    text-align: center;
+    line-height: 35px;
   }
   .form__title {
     font-size: 20px;
@@ -937,12 +1011,8 @@ img {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 41.5%, cover;
     background-repeat: repeat-x, no-repeat;
-  }
-  .brif__interview {
-    background: url("../img/brif/brif-color-bg.png");
-    background-repeat: repeat-y;
   }
   .brif-block {
     -webkit-box-orient: vertical;
@@ -952,11 +1022,20 @@ img {
   }
   .brif__form {
     padding-top: 61px;
-    margin-top: 100px;
     padding-bottom: 34px;
+    padding-left: 0;
   }
   .form__title {
-    margin-top: 61px;
+    padding-top: 61px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .interview__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .interview__subtitle {
+    font-size: 14px;
   }
 }
 
@@ -982,17 +1061,13 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  max-width: 340px;
   line-height: 1.4;
-  margin-top: 0;
   margin-bottom: 100px;
   color: #000000;
 }
 
 .contacts__bold {
   color: #000000;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
 }
 
 .contacts__bold_link {
@@ -1032,6 +1107,10 @@ img {
   color: #000000;
 }
 
+.form__subtitle {
+  margin-bottom: 49px;
+}
+
 @media (max-width: 1200px) {
   .footer {
     position: static;
@@ -1055,14 +1134,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .contacts {
-    padding-top: 67px;
-  }
-  .contacts__title {
-    font-size: 18px;
-    max-width: 240px;
-    margin-bottom: 39px;
-  }
   .contacts__bold {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
