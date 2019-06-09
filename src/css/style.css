@@ -660,7 +660,7 @@ img {
 }
 
 .price {
-  margin-bottom: 62px;
+  margin-bottom: 0;
 }
 
 .price__title {
@@ -808,7 +808,7 @@ img {
   .price__title {
     font-size: 18px;
     max-width: 242px;
-    margin-bottom: 27px;
+    margin-bottom: 0;
   }
   .price__subtitle {
     margin-bottom: 61px;
@@ -931,7 +931,7 @@ img {
 .interview-list__counter {
   display: inline-block;
   text-align: center;
-  line-height: 35px;
+  line-height: 33px;
   font-size: 14px;
   width: 35px;
   height: 35px;
@@ -996,7 +996,6 @@ img {
     margin-right: 20px;
     min-width: 35px;
     text-align: center;
-    line-height: 35px;
   }
   .form__title {
     font-size: 20px;
@@ -1011,9 +1010,8 @@ img {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 44.5%, cover;
+    background-size: 100% 46%, cover;
     background-repeat: repeat-x, no-repeat;
-    padding-bottom: 34px;
   }
   .brif__input {
     margin-bottom: 8px;
@@ -1028,12 +1026,11 @@ img {
             flex-direction: column;
   }
   .brif__form {
-    padding-top: 61px;
-    padding-bottom: 34px;
+    padding-top: 90px;
     padding-left: 0;
   }
   .form__title {
-    padding-top: 61px;
+    padding-top: 0;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 21px;
@@ -1047,7 +1044,7 @@ img {
   }
   .interview__title {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 20px;
   }
   .interview__subtitle {
     font-size: 14px;
@@ -1086,6 +1083,7 @@ img {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   color: #000000;
+  display: block;
 }
 
 .contacts__bold_link {
@@ -1168,8 +1166,12 @@ img {
     margin-bottom: 34px;
   }
   .contacts__bold {
+    display: block;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
+  }
+  .form__title {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
