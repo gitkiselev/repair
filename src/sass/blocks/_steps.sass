@@ -1,0 +1,42 @@
+.steps
+    display: flex
+    justify-content: space-between
+    &__bold
+        +bold
+    &__item
+        font-size: 16px
+        +bold
+        line-height: 23px   
+        width: 370px
+        height: 410px
+        padding: 27px 26px
+        background-position: center bottom
+        &_1
+            background-image: url('../img/steps/01.png')
+        &_2
+            background-image: url('../img/steps/02.png')
+        &_3
+            background-image: url('../img/steps/03.png')
+    &__text
+        display: block
+        max-width: 282px
+@media (max-width: 1200px)
+    .steps
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__item
+            width: 370px
+            margin-bottom: 31px
+            &:last-child
+                margin-bottom: 0       
+@media (max-width: 768px)
+    .steps
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__item
+            width: 277px
+            margin-bottom: 31px
+            &:last-child
+                margin-bottom: 0
