@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,aAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,0BAA0B;;EAGvC,EAAE;IACA,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,cAAc,CAAC;EACb,cAAc,EAAE,aAAa;CAC9B",
+    "sources": [
+        "../fading_entrances/fadeInLeftBig.scss"
+    ],
+    "names": [],
+    "file": "fadeInLeftBig.css"
+}

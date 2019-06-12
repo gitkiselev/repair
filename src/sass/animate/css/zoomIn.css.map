@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,MAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,sBAAsB;;EAGnC,GAAG;IACD,OAAO,EAAE,CAAC;;;;AAId,AAAA,OAAO,CAAC;EACN,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "../zooming_entrances/zoomIn.scss"
+    ],
+    "names": [],
+    "file": "zoomIn.css"
+}
