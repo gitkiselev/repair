@@ -99,4 +99,8 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slick-slide.slick-active {
+  outline: 0;
+}
 /*# sourceMappingURL=slick.css.map */

@@ -1,11 +1,19 @@
 var button = document.querySelector('#button');
 var modal = document.querySelector('#modal');
 var close = document.querySelector('#close');
+var cardLink = document.querySelectorAll('.card__link');
+
 var idSet;
-button.addEventListener('click', function() {
+button.addEventListener('click', function(e) {
+    
     openModal();
 });
-
+for (var i = 0; i < cardLink.length; i++) {
+    cardLink[i].addEventListener('click', function(e){
+        e.preventDefault();
+        openModal();
+    });
+}
 close.addEventListener('click', function() {
     closeModal();
 });
@@ -20,3 +28,4 @@ function closeModal() {
     /*Очистим интервал, если закрыли раньше истечения таймера*/
     clearTimeout(idSet);
 }
+console.log('main.js');
